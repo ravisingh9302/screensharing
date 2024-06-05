@@ -4,6 +4,7 @@ const io = new Server(process.env.PORT, {
   cors: true,
 });
 
+console.log(io.path())
 const emailToSocketIdMap = new Map();
 const socketidToEmailMap = new Map();
 
@@ -37,3 +38,4 @@ io.on("connection", (socket) => {
     io.to(to).emit("peer:nego:final", { from: socket.id, ans });
   });
 });
+
