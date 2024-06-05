@@ -10,7 +10,7 @@ export const useSocket = () => {
 
 export const SocketProvider = (props) => {
   // const socket = useMemo(() => io("https://final-clara-nationwide-enhance.trycloudflare.com"), []);
-  const socket = useMemo(() => io("http://localhost:8000/"), []);
+  const socket = useMemo(() => io(process.env.REACT_APP_BACKEND_URL), []);
 
   return (
     <SocketContext.Provider value={socket}>

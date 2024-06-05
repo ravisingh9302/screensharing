@@ -45,13 +45,13 @@ class PeerService {
   // this.channel.onopen((e) => {
   //   console.log("channel created")
   // })
-// peer.channel.onmessage((e) => {
-//   console.log("channel message")
-// })
-// peer.channel.onclose((e) => {
-//   console.log("channel close")
-// })
+  // peer.channel.onmessage((e) => {
+  //   console.log("channel message")
+  // })
+  // peer.channel.onclose((e) => {
+  //   console.log("channel close")
+  // })
 
-  }
+}
 
 export default new PeerService();
